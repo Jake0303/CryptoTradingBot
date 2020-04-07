@@ -71,7 +71,7 @@ namespace NinjaTrader.NinjaScript.Strategies
 
             //Entry
             if (Position.MarketPosition == MarketPosition.Flat && Close[0] <= SRLines.L1SupportPrice)
-                EnterLong();
+                EnterShort();
 
             if (Position.MarketPosition == MarketPosition.Flat && Close[0] >= SRLines.L1ResistancePrice)
                 EnterLong();
